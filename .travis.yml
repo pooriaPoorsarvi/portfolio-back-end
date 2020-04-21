@@ -2,13 +2,14 @@ language: java
 java:
   - "1.8.0"
 sudo: true
+env:
+  SPRING_PROFILES_ACTIVE = production
 branches:
   only:
     - master
 
 before_install:
   - chmod +x mvnw
-
 
 cache:
   yarn: true
