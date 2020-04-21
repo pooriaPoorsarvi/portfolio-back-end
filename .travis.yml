@@ -26,3 +26,4 @@ deploy:
   app: "AccessedPortfolio"
   env : "Accessedportfolio-env"
   bucket_name: "elasticbeanstalk-us-east-2-841421274623"
+  zip_file: "./application.jar"
