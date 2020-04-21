@@ -4,7 +4,8 @@ java:
 sudo: true
 
 env:
-  - SPRING_PROFILES_ACTIVE = production
+  global:
+    - SPRING_PROFILES_ACTIVE = production
 branches:
   only:
     - master
