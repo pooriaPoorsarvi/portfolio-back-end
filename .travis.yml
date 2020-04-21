@@ -23,6 +23,6 @@ deploy:
   access_key_id: $ACCESS_KEY_ID_AWS
   secret_access_key: $SECRET_ACCESS_KEY_AWS
   region: "us-east-2"
-  app: "PortfolioSite"
-  env : "Portfoliosite-env"
+  app: "AccessedPortfolio"
+  env : "Accessedportfolio-env"
   bucket_name: "elasticbeanstalk-us-east-2-841421274623"
