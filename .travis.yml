@@ -2,8 +2,11 @@ language: java
 java:
   - "1.8.0"
 sudo: true
+
+jdk:
+  - oraclejdk8
 env:
-  SPRING_PROFILES_ACTIVE = production
+  - SPRING_PROFILES_ACTIVE = production
 branches:
   only:
     - master
