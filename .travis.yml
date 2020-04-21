@@ -13,9 +13,10 @@ before_install:
 cache:
   yarn: true
 
-#
-#after_deploy:
-#  - mvn spring-boot:run
+
+after_deploy:
+  - mvn clean package
+  - mv ./target/portfolio-back-end-0.0.1-SNAPSHOT.jar ./application.jar
 
 deploy:
   provider: elasticbeanstalk
