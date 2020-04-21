@@ -10,13 +10,15 @@ branches:
 before_install:
   - chmod +x mvnw
 
+install:
+  - mvn clean  package
+  - mv ./target/portfolio-back-end-0.0.1-SNAPSHOT.jar ./application.jar
+
 cache:
   yarn: true
 
 
-script:
-  - mvn clean  package
-  - mv ./target/portfolio-back-end-0.0.1-SNAPSHOT.jar ./application.jar
+#script:
 
 deploy:
   provider: elasticbeanstalk
