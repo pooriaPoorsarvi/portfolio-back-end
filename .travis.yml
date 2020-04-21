@@ -13,8 +13,9 @@ before_install:
 cache:
   yarn: true
 
-after_deploy:
-  - mvn spring-boot:run
+#
+#after_deploy:
+#  - mvn spring-boot:run
 
 deploy:
   provider: elasticbeanstalk
