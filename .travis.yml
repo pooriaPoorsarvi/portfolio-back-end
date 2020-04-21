@@ -1,7 +1,7 @@
 language: java
 java:
   - "1.8.0"
-
+sudo: true
 branches:
   only:
     - master
