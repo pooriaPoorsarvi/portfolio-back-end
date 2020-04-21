@@ -1,0 +1,45 @@
+language: java
+java:
+  - "1.8.0"
+
+branches:
+  only:
+    - master
+
+
+before_deploy:
+  - yum install -y java-1.8.0-openjdk-devel
+  - cd /usr/local/src
+  - wget http://www-us.apache.org/dist/maven/maven-3/3.5.4/binaries/apache-maven-3.5.4-bin.tar.gz
+  - tar -xf apache-maven-3.5.4-bin.tar.gz
+  - mv apache-maven-3.5.4/ apache-maven/
+  - cd /etc/profile.d/
+  - echo $'# Apache Maven Environment Variables\n# MAVEN_HOME for Maven 1 - M2_HOME for Maven 2\nexport M2_HOME=/usr/local/src/apache-maven\nexport PATH=${M2_HOME}/bin:${PATH}' > maven.sh
+  - chmod +x maven.sh
+  - source /etc/profile.d/maven.sh
+
+cache:
+  yarn: true
+
+after_deploy:
+  - mvn spring-boot:run
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $ACCESS_KEY_ID_AWS
+  secret_access_key: $SECRET_ACCESS_KEY_AWS
+  region: "us-east-2"
+  app: "PersonalSite"
+  env : "Personalsite-env"
+  bucket_name: "elasticbeanstalk-us-east-2-841421274623"
+
+#deploy:
+#  provider: elasticbeanstalk
+#  access_key_id: $ACCESS_KEY_ID_AWS
+#  secret_access_key: $SECRET_ACCESS_KEY_AWS
+#  bucket: "ppt.portfolio"
+#  skip_cleanup: true
+#  acl: public_read
+#  local_dir: ./dist/Personal-Site-Front-End/
+#  region: us-east-2
+
