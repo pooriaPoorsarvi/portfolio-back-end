@@ -5,7 +5,7 @@ sudo: true
 
 env:
   global:
-    - SPRING_PROFILES_ACTIVE = production
+    - SPRING_PROFILES_ACTIVE=production
 branches:
   only:
     - master
