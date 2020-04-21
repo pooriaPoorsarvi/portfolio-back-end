@@ -15,7 +15,7 @@ cache:
 
 
 script:
-  - mvn clean package
+  - mvn install package
   - mv ./target/portfolio-back-end-0.0.1-SNAPSHOT.jar ./application.jar
 
 deploy:
