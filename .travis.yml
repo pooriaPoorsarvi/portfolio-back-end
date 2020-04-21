@@ -10,6 +10,7 @@ branches:
 before_install:
   - chmod +x mvnw
 
+# We do not set the active profile here, we set them in the IDE and the Env of AWS
 install:
   - mvn clean  package
   - mv ./target/portfolio-back-end-0.0.1-SNAPSHOT.jar ./application.jar
