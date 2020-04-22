@@ -14,7 +14,20 @@ public class BlogPostEntity {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     int id;
 
-    @Size(min = 500, max = 30000)
+    @Size(min = 20, max = 300)
+    @NotNull
+    String title;
+
+    @Size(min = 100, max = 2000)
+    @NotNull
+    String intro;
+
+    @Size(min = 1, max = 1000)
+    @NotNull
+    String image_src;
+
+
+    @Size(min = 500, max = 10383)
     @NotNull
     String markDown;
 
@@ -37,4 +50,28 @@ public class BlogPostEntity {
         this.id = id;
     }
 
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getIntro() {
+        return intro;
+    }
+
+    public void setIntro(String intro) {
+        this.intro = intro;
+    }
+
+    public String getImage_src() {
+        return image_src;
+    }
+
+    public void setImage_src(String image_src) {
+        this.image_src = image_src;
+    }
 }
