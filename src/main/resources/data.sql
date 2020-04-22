@@ -37,7 +37,7 @@ insert into blog_post_entity values (1, 'https://s3.amazonaws.com/prod-www-black
 
   <br>
 
-  The links for these graphs are available at plotly for further analysis: [Healthy](https://plotly.com/~unheardPlayer/30/#/), [Pneumonia](https://plotly.com/~unheardPlayer/32/#/), [Pre Existing Conditions](https://plotly.com/~unheardPlayer/34/#/).', '<h1><i>Blog post title:</i></h1><br>');
+  The links for these graphs are available at plotly for further analysis: [Healthy](https://plotly.com/~unheardPlayer/30/#/), [Pneumonia](https://plotly.com/~unheardPlayer/32/#/), [Pre Existing Conditions](https://plotly.com/~unheardPlayer/34/#/).', '<h1><i>Blog post title1:</i></h1><br>');
 insert into blog_post_entity values (2, 'https://s3.amazonaws.com/prod-www-blackline-com/blog/wp-content/uploads/2019/01/29163118/A-Conversation-With-BlackLines-Machine-Learning-Experts.jpg', '<div class="featured-text text-center text-lg-left">
       <h4>Machine learning paper</h4>
       <p class="text-black-50 mb-0">One of the papers worked, was the use of machine learning inorder to find code vulnerabilities by a Neural Network model. This model used RNN and text processing and the paper can be found <a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417419308735">here</a>.</p>
@@ -77,4 +77,4 @@ insert into blog_post_entity values (2, 'https://s3.amazonaws.com/prod-www-black
 
   <br>
 
-  The links for these graphs are available at plotly for further analysis: [Healthy](https://plotly.com/~unheardPlayer/30/#/), [Pneumonia](https://plotly.com/~unheardPlayer/32/#/), [Pre Existing Conditions](https://plotly.com/~unheardPlayer/34/#/).', '<h1><i>Blog post title:</i></h1><br>');
+  The links for these graphs are available at plotly for further analysis: [Healthy](https://plotly.com/~unheardPlayer/30/#/), [Pneumonia](https://plotly.com/~unheardPlayer/32/#/), [Pre Existing Conditions](https://plotly.com/~unheardPlayer/34/#/).', '<h1><i>Blog post title2:</i></h1><br>');
