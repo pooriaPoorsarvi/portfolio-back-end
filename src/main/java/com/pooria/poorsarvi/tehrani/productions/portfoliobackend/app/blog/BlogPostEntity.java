@@ -24,7 +24,7 @@ public class BlogPostEntity {
 
     @Size(min = 1, max = 1000)
     @NotNull
-    String image_src;
+    String imageSrc;
 
 
     @Size(min = 500, max = 10383)
@@ -67,11 +67,11 @@ public class BlogPostEntity {
         this.intro = intro;
     }
 
-    public String getImage_src() {
-        return image_src;
+    public String getImageSrc() {
+        return imageSrc;
     }
 
-    public void setImage_src(String image_src) {
-        this.image_src = image_src;
+    public void setImageSrc(String image_src) {
+        this.imageSrc = image_src;
     }
 }
