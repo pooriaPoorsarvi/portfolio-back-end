@@ -26,7 +26,7 @@ public class BlogPostEntity {
     @NotNull
     String imageSrc;
 
-
+//    TODO : check why you can't create a markDown with empty at the start and the end for ngx-markdown
     @Size(min = 500, max = 10383)
     @NotNull
     String markDown;
