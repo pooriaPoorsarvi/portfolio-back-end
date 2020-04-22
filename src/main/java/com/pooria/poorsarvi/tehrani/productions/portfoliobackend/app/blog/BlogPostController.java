@@ -3,7 +3,6 @@ package com.pooria.poorsarvi.tehrani.productions.portfoliobackend.app.blog;
 import com.pooria.poorsarvi.tehrani.productions.portfoliobackend.exceptions.EntityNotFoundInDBException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
