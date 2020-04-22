@@ -14,7 +14,7 @@ public class BlogPostEntity {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     int id;
 
-    @Size(min = 500, max = 1000)
+    @Size(min = 500, max = 30000)
     @NotNull
     String markDown;
 
