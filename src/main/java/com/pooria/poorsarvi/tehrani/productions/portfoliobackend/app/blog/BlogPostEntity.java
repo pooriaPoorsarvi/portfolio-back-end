@@ -27,16 +27,18 @@ public class BlogPostEntity {
     String imageSrc;
 
 //    TODO : check why you can't create a markDown with empty at the start and the end for ngx-markdown
-    @Size(min = 500, max = 10383)
+    @Size(min = 500, max = 5000)
     @NotNull
-    String markDown;
+    String markDownSrc;
 
-    public String getMarkDown() {
-        return markDown;
+//    TODO : add a time to each blog posts that can be changed later
+//    TODO : add related posts later
+    public String getMarkDownSrc() {
+        return markDownSrc;
     }
 
-    public void setMarkDown(String markDown) {
-        this.markDown = markDown;
+    public void setMarkDownSrc(String markDown) {
+        this.markDownSrc = markDown;
     }
 
 
