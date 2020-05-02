@@ -13,7 +13,11 @@ before_install:
 # We do not set the active profile here, we set them in the IDE and the Env of AWS
 install:
   - mvn clean  package
-  - mv ./target/portfolio-back-end-0.0.1-SNAPSHOT.jar ./application.jar
+  - mkdir bundle
+  - touch ./bundle/Procfile
+  - echo $JAVA_ARGS > ./bundle/Procfile
+  - mv ./target/portfolio-back-end-0.0.1-SNAPSHOT.jar ./bundle//application.jar
+  - zip -r ./bundle.zip ./bundle/Procfile ./bundle//application.jar
 
 cache:
   yarn: true
@@ -29,6 +33,6 @@ deploy:
   app: "AccessedPortfolio"
   env : "Accessedportfolio-env"
   bucket_name: "elasticbeanstalk-us-east-2-841421274623"
-  zip_file: "./application.jar"
+  zip_file: "./bundle.zip"
   #  The clean up is skipped so that the jar file would not be removed
   skip_cleanup: true
