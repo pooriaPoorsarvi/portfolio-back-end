@@ -10,7 +10,7 @@ public class UserEntity {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     int id;
 
-    @Size(min = 10, max = 500)
+    @Size(min = 5, max = 500)
     String email;
 
 
