@@ -1,5 +1,4 @@
 
-USE test;
 insert into blog_post_entity (id, image_src, intro, mark_down_src, title)
 select 1, 'https://www.advantageservices.net/photos/articles/correct/gettyimages-881467948.jpg', '<div class="featured-text text-center text-lg-left">
       <h4>Intro to the making of my website</h4>

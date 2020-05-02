@@ -17,6 +17,7 @@ public class UserController {
     this.userRepository = userRepository;
   }
 
+  @CrossOrigin()
   @PostMapping(path = "/users")
   public ResponseEntity<Object> createUser(@Valid @RequestBody UserEntity userEntity) {
     userEntity.id = 0;
@@ -29,6 +30,7 @@ public class UserController {
     return ResponseEntity.created(location).build();
   }
 
+  @CrossOrigin()
   @GetMapping("/users/{ID}")
   UserEntity getUser(@PathVariable Integer ID) {
     Optional<UserEntity> result = userRepository.findById(ID);
