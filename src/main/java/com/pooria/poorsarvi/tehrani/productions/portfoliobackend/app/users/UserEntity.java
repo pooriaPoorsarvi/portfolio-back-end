@@ -3,7 +3,6 @@ package com.pooria.poorsarvi.tehrani.productions.portfoliobackend.app.users;
 import javax.persistence.*;
 import javax.validation.constraints.Size;
 
-@Table(schema = "users")
 @Entity
 public class UserEntity {
 
