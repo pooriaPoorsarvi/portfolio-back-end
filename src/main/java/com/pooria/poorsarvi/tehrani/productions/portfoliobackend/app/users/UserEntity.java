@@ -1,6 +1,7 @@
 package com.pooria.poorsarvi.tehrani.productions.portfoliobackend.app.users;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.Size;
 
 @Entity
@@ -10,7 +11,9 @@ public class UserEntity {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     int id;
 
+    @Email
     @Size(min = 5, max = 500)
+    @Column(unique = true)
     String email;
 
 
