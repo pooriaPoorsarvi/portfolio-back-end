@@ -1,6 +1,6 @@
 
 
-insert into blog_post_entity (test) (id, image_src, intro, mark_down_src, title)
+insert into test.blog_post_entity (id, image_src, intro, mark_down_src, title)
 select 1, 'https://www.advantageservices.net/photos/articles/correct/gettyimages-881467948.jpg', '<div class="featured-text text-center text-lg-left">
       <h4>Intro to the making of my website</h4>
       <p class="text-black-50 mb-0">Learn all about how I made this website, and what technologies were used. This is just a big summary of all the technologies.</p>
