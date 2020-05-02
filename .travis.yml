@@ -16,6 +16,7 @@ install:
   - mkdir bundle
   - touch ./bundle/Procfile
   - echo $JAVA_ARGS > ./bundle/Procfile
+  - echo $JAVA_ARGS
   - mv ./target/portfolio-back-end-0.0.1-SNAPSHOT.jar ./bundle//application.jar
   - zip -r ./bundle.zip ./bundle/Procfile ./bundle//application.jar
 
